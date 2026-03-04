@@ -78,4 +78,18 @@ public class SuperLiga {
         return sb.toString();
     }
 
+    /**
+     * Cuenta todos los equipo que hay
+     * @return el numero de equipos que hay
+     */
+    public int contarEquipos(){
+        int contador = 0;
+
+        for(int i=0; i < NUM_MAX_EQUIPOS; i++){
+            if(equipos[i] != null){
+                contador++;
+            }
+        }
+        return contador;
+    }
 }
