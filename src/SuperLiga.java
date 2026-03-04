@@ -43,5 +43,25 @@ public class SuperLiga {
         return posicionLibre;
     }
 
+    /**
+     * Añade un equipo
+     * @param equipo equipo recibido
+     * @return true si lo ha registrado o false si no ha podido
+     */
+    public boolean registrarEquipo(Equipos equipo){
+        boolean equipoRegistrado = false;
+        int posicionEquipo;
+
+        if (buscarEquipo(equipo.getCodigo()) == null){
+            posicionEquipo = buscarPrimerHuecoLibre();
+            if(posicionEquipo >= 0){
+                equipos[posicionEquipo] = equipo;
+                equipoRegistrado = true;
+            }
+        }
+        return equipoRegistrado;
+
+    }
+
 
 }
