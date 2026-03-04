@@ -26,6 +26,22 @@ public class SuperLiga {
         return equipo;
     }
 
+    /**
+     * Busca la primera poscion libre
+     * @return la posicion libre o -1
+     */
+    private int buscarPrimerHuecoLibre(){
+        int posicionLibre = -1;
+        boolean seguirBuscando = true;
+
+        for(int i=0; i < NUM_MAX_EQUIPOS && seguirBuscando; i++){
+            if(equipos[i] == null){
+                posicionLibre = i;
+                seguirBuscando = false;
+            }
+        }
+        return posicionLibre;
+    }
 
 
 }
