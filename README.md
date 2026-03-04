@@ -27,7 +27,7 @@ la siguiente información:
 
 -   codigo (int)\
 -   nombre (String)\
--   ciudad (String)\
+-   pais (String)\
 -   puntos (int)
 
 El sistema debe permitir registrar equipos, buscarlos, mostrarlos y
