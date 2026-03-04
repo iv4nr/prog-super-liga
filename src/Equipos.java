@@ -2,20 +2,20 @@ public class Equipos {
 
     private int codigo;
     private String nombre;
-    private String ciudad;
+    private String pais;
     private int puntos;
 
     /**
      * Metodo constructor de Equipos
      * @param codigo codigo del equipo
      * @param nombre nombre del equipo
-     * @param ciudad ciudad del equipo
+     * @param pais pais del equipo
      * @param puntos puntos del equipo
      */
-    public Equipos(int codigo, String nombre, String ciudad, int puntos) {
+    public Equipos(int codigo, String nombre, String pais, int puntos) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.ciudad = ciudad;
+        this.pais = pais;
         this.puntos = puntos;
     }
 
@@ -39,8 +39,8 @@ public class Equipos {
      * Devuelve la ciudad del equipo
      * @return String ciudad del equipo
      */
-    public String getCiudad() {
-        return ciudad;
+    public String getpais() {
+        return pais;
     }
 
     /**
@@ -56,7 +56,7 @@ public class Equipos {
         StringBuilder sb = new StringBuilder("Equipo { ");
         sb.append(String.format("Codigo: %d", codigo));
         sb.append(String.format(", Nombre: %s", nombre));
-        sb.append(String.format(", Ciudad: %s", ciudad));
+        sb.append(String.format(", Pais: %s", pais));
         sb.append(String.format(", Puntos: %d", puntos));
         sb.append(" }");
         return sb.toString();
