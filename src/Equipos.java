@@ -62,6 +62,24 @@ public class Equipos {
         return sb.toString();
     }
 
+    /**
+     * Actualiza el numero de puntos que tiene un equipo.
+     * Comprueba que el nuemro recibido sea mayor que 0.
+     * @param numPuntos nueva cantidad de puntos
+     * @return true si ha podido cambiarse, false si no ha podido
+     */
+    public boolean actualizarPuntos(int numPuntos) {
+        boolean resultado;
+
+        if(numPuntos <= 0) {
+            resultado = false;
+        } else  {
+            this.puntos = numPuntos;
+            resultado = true;
+        }
+        return resultado;
+    }
+
 
 
 }
