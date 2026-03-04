@@ -1,4 +1,4 @@
-public class Equipo {
+public class Equipos {
 
     private int codigo;
     private String nombre;
@@ -12,7 +12,7 @@ public class Equipo {
      * @param ciudad ciudad del equipo
      * @param puntos puntos del equipo
      */
-    public Equipo(int codigo, String nombre, String ciudad, int puntos) {
+    public Equipos(int codigo, String nombre, String ciudad, int puntos) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.ciudad = ciudad;
