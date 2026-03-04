@@ -63,5 +63,19 @@ public class SuperLiga {
 
     }
 
+    /**
+     * Muestra todos los equipos registrados
+     * @return los equipos registrados
+     */
+    public String mostrarEquipos(){
+        StringBuilder sb = new StringBuilder("Equipos registrados: \n");
+        for(int i=0; i < NUM_MAX_EQUIPOS; i++){
+            if(equipos[i] != null){
+                sb.append(equipos[i].toString());
+                sb.append("\n");
+            }
+        }
+        return sb.toString();
+    }
 
 }
